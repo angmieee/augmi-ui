@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/angmieee/augmi-ui/issues"
   },
-  "homepage": "https://github.com/angmieee/augmi-ui#readme"
+  "homepage": "https://github.com/angmieee/augmi-ui#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
