@@ -26,6 +26,7 @@ chai.use(spies)
 const expect = chai.expect
 // 单元测试
 {
+    //测试按钮含有icon
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
         propsData: {
