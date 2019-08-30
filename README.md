@@ -41,10 +41,6 @@ npm i --save augmi
 ```$xslt
 
 ```
-4.引入 svg symbols
-```$xslt
-
-```
   
   
   
