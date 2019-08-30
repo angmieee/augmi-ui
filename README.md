@@ -1,6 +1,6 @@
 # Augmi-UI是一个Vue UI框架
 
-作者：angmieee
+[![Build Status](https://travis-ci.org/angmieee/augmi-ui.svg?branch=master)](https://travis-ci.org/angmieee/augmi-ui)
 
 ## 介绍
 
