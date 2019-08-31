@@ -1,60 +1,38 @@
-# Augmi-UI是一个Vue UI框架
-
-[![Build Status](https://travis-ci.org/angmieee/augmi-ui.svg?branch=master)](https://travis-ci.org/angmieee/augmi-ui)
+# Augmi UI 框架 [![Build Status](https://travis-ci.org/angmieee/augmi-ui.svg?branch=master)](https://travis-ci.org/angmieee/augmi-ui)
 
 ## 介绍
+Augmi UI 是我在学习 Vue 过程中做的一个UI框架。
 
-这是我在学习 Vue 过程中做的一个UI框架。
+注意：本 UI 框架的代码尚未完全完工，请不要在生产环境中使用本 UI 框架。
 
-## 开始使用
+## 有哪些轮子
 
-1.添加 CSS 样式
-  
-  使用本框架前，请在 CSS 中开启 border-box
-  
-  ```
-  *，*::before,*::after{ box-sizing:border-box; }
-  ```
-  
-  你还需要设置默认颜色等变量（后续会改为 SCSS 变量）
-  
-  ```
-  :root {
-      --button-height: 32px;
-      --font-size: 14px;
-      --button-bg: white;
-      --button-active-bg: #eee;
-      --border-radius: 4px;
-      --color: #333;
-      --border-color: #999;
-      --border-color-hover: #666;
-   }
-  
-  ```
-  
-2.安装 augmi
-```$xslt
-npm i --save augmi
+Button-按钮、Input-输入框、Grid-网格、Layout-布局、Toast-弹出框、Tabs-标签页、Popover-弹出层、Collapse-手风琴等
 
-```
-3.引入 augmi
-```$xslt
+## 项目特点
 
-```
-  
-  
-  
-  
-  IE 8 及以上浏览器都支持此样式。
+1. 使用 Travis CI 进行持续集成
+2. 实用了 Karma + Mocha 做单元测试
+3. 本框架是基于 Vue 2 实现
+4. 使用 parcel 一个Web应用程序打包器
 
 ## 文档
 
+[官方文档](https://angmieee.github.io/augmi-ui/)
+
 ## 提问
 
-## 变更记录
+[issue](https://github.com/angmieee/augmi-ui/issues)
 
 ## 联系方式
 
+邮箱：369822144@qq.com
+
 ## 贡献代码
+
+[Pull requests](https://github.com/angmieee/augmi-ui/pulls)
+
+## 遵循 MIT 开源协议
+#### Copyright © 2019 Huang Miaojie
 
 
