@@ -1,28 +1,52 @@
 <template>
     <div style="padding-top: 16px;">
+        <h2>简单用法</h2>
+        <p>
+            <strong>预览</strong>
+        </p>
         <g-tabs :selected="selected">
             <g-tabs-head>
-                <g-tabs-item name="1">Hello</g-tabs-item>
-                <g-tabs-item name="2">你好</g-tabs-item>
+                <g-tabs-item name="1">Tab1</g-tabs-item>
+                <g-tabs-item name="2">Tab2</g-tabs-item>
             </g-tabs-head>
             <g-tabs-body>
-                <g-tabs-pane name="1">我是英文</g-tabs-pane>
-                <g-tabs-pane name="2">我是中文</g-tabs-pane>
+                <g-tabs-pane name="1">Content of Tab Pane 1</g-tabs-pane>
+                <g-tabs-pane name="2">Content of Tab Pane 2</g-tabs-pane>
             </g-tabs-body>
         </g-tabs>
+
+        <p>
+            <strong>代码</strong>
+        </p>
+        <pre><code>{{content}}</code></pre>
     </div>
 </template>
 <script>
-    import GTabs from '../../../src/tabs'
-    import GTabsBody from '../../../src/tabs-body'
-    import GTabsHead from '../../../src/tabs-head'
-    import GTabsItem from '../../../src/tabs-item'
-    import GTabsPane from '../../../src/tabs-pane'
+    import GTabs from '../../../src/tabs/tabs'
+    import GTabsBody from '../../../src/tabs/tabs-body'
+    import GTabsHead from '../../../src/tabs/tabs-head'
+    import GTabsItem from '../../../src/tabs/tabs-item'
+    import GTabsPane from '../../../src/tabs/tabs-pane'
     export default {
         components: {GTabs, GTabsBody, GTabsHead, GTabsItem, GTabsPane},
         data () {
             return {
-                selected: '1'
+                selected: '1',
+                content: `
+          data:{
+            selected: '1'
+          }
+          <g-tabs :selected="selected">
+            <g-tabs-head>
+              <g-tabs-item name="1">1</g-tabs-item>
+              <g-tabs-item name="2">2</g-tabs-item>
+            </g-tabs-head>
+            <g-tabs-body>
+              <g-tabs-pane name="1">content 1</g-tabs-pane>
+              <g-tabs-pane name="2">content 2</g-tabs-pane>
+            </g-tabs-body>
+          </g-tabs>
+      `.replace(/^ {8}/gm, '').trim()
             }
         }
     }
