@@ -1,13 +1,10 @@
 <template>
-    
+    <div class="header">
+        <slot></slot>
+    </div>
 </template>
 
-<script>
-    export default {
-        name: "Header"
+<style lang="scss" scoped>
+    .header {
     }
-</script>
-
-<style scoped>
-
 </style>
