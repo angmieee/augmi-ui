@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = {
     base: '/augmi-ui/',
     title: 'Augmi UI',
@@ -5,24 +6,39 @@ module.exports = {
     themeConfig: {
         nav:[
             {text:'主页',link:'/'},
-            {text:'文档',link:'/guide/'},
-            {text:'交流',link:'https://google.com'}
+            {text:'Star',link:'https://github.com/angmieee/augmi-ui'},
+            {text:'Github',link:'https://github.com/angmieee'}
         ],
         sidebar: [
             {
                 title: '入门',
+                collapsable: false,
                 children: [
                     '/install/',
-                    '/get-started/'
+                    '/get-started/',
                 ]
             },
             {
                 title: '组件',
-                children: [ '/components/button' ]
+                collapsable: false,
+                children: [
+                    '/components/button',
+                    '/components/input',
+                    '/components/grid',
+                    '/components/layout',
+                    '/components/toast',
+                    '/components/popover',
+                    '/components/tabs',
+                    '/components/collapse'
+
+                ]
             },
 
-
         ]
+    },
+    scss:{
+        includePaths: [path.join(__dirname, '../../styles')]
     }
+
 
 }

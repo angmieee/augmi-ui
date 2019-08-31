@@ -1,0 +1,45 @@
+<template>
+    <div style="padding-top: 16px;">
+        <g-popover>
+            <g-button>上方弹出</g-button>
+            <template slot="content">
+                弹出内容
+            </template>
+        </g-popover>
+        <g-popover position="bottom">
+            <g-button>下方弹出</g-button>
+            <template slot="content">
+                弹出内容
+            </template>
+        </g-popover>
+        <g-popover position="left">
+            <g-button>左边弹出</g-button>
+            <template slot="content">
+                弹出内容
+            </template>
+        </g-popover>
+        <g-popover position="right">
+            <g-button>右边弹出</g-button>
+            <template slot="content">
+                弹出内容
+            </template>
+        </g-popover>
+    </div>
+</template>
+
+<style scoped>
+</style>
+<script>
+    import GButton from '../../../src/button'
+    import GPopover from '../../../src/popover'
+    export default {
+        components: {GButton, GPopover},
+        methods: {
+            onClickButton () {
+                this.$toast('<strong style="color:red;">加粗的提示</strong>', {
+                    enableHtml: true
+                })
+            }
+        },
+    }
+</script>
